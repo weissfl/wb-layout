@@ -1,0 +1,43 @@
+.page-footer {
+    min-height: 228px;
+    background-color: @color-black;
+
+    &__conteiner {
+        max-width: 970px;
+        .container();
+        .clearfix();
+    }
+
+    &__row {
+        .make-row();
+        .clearfix();
+    }
+
+    &__contact {
+        margin: 53px 0 22px;
+        padding-bottom: 14px;
+        text-align: center;
+        border-bottom: 1px solid @color-dark-gray;
+        .make-xs-column(12);
+    }
+
+    &__box {
+        display: block;
+        margin-bottom: 5px;
+        color: #ffffff;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+
+    &__copyrighted {
+		display: block;
+		margin-bottom: 25px;
+        font-size: 13px;
+        text-align: center;
+        color: @color-dark-gray;
+        .make-xs-column(12);
+    }
+}

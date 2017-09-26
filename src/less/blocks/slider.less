@@ -1,0 +1,105 @@
+.slider {
+    overflow: hidden;
+    background-color: @color-cold;
+    background: radial-gradient(at center 75%, lighten(@color-cold, 60%), @color-cold);
+
+    @media (min-width: @screen-sm) { height: 660px; background: url(../img/slider-background.jpg) center bottom no-repeat; }
+
+    @media (min-width: @screen-md) { height: 767px; }
+
+    &__continer {
+        max-width: 970px;
+        .container();
+        .clearfix();
+    }
+
+    &__row {
+        .make-row();
+        .clearfix();
+    }
+
+    &__column { .make-xs-column(12); }
+
+    &__text {
+        max-width: 520px;
+        margin: 28px auto 0;
+
+        p { margin-bottom: 30px; }
+
+        @media (min-width: @screen-sm) {
+            max-width: 450px;
+            margin: 50px 0 0 0;
+        }
+
+        @media (min-width: @screen-md) {
+            max-width: 520px;
+            margin: 100px 0 0 0;
+        }
+    }
+
+    &__img {
+        max-width: 425px;
+        margin: 0 auto;
+
+        @media (min-width: @screen-sm) {
+            position: absolute;
+            top: 100px;
+            right: -70px;
+            max-width: 400px;
+        }
+
+        @media (min-width: @screen-md) {
+            max-width: none;
+            top: 35px;
+            right: -153px;
+        }
+    }
+
+    &__header {
+        display: inline-block;
+        padding: 9px;
+        margin: 0;
+        border: 3px solid #ffffff;
+        font-family: 'Play', Arial;
+        font-size: 65px;
+        font-weight: 400;
+        line-height: 50px;
+        text-transform: none;
+        color: #ffffff;
+
+        @media (min-width: @screen-md) {
+            padding: 20px 17px;
+            font-size: 94px;
+        }
+    }
+
+    &__list-title {
+        font-family: 'Play', Arial;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: none;
+        color: @color-hot;
+
+        @media (min-width: @screen-md) { margin: 55px 0 28px; }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            padding-left: 37px;
+            margin-bottom: 16px;
+            line-height: 25px;
+            background: url(../img/list-marker.svg) left 3px no-repeat;
+        }
+
+        svg {
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+    }
+
+}

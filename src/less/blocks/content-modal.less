@@ -1,0 +1,98 @@
+.content-modal {
+    &__text {
+        padding: 0 20px;
+
+        p {
+            margin-top: 0;
+            font-size: 14px;
+			
+			@media (min-width: @screen-xs) {
+				font-size: 16px;
+			}   
+        }
+		
+		@media (min-width: @screen-xs) {
+			padding: 0 50px;
+		} 
+    }
+
+    &__application {
+        height: 100%;
+        background: radial-gradient(at center 50%, lighten(@color-cold, 25%), @color-cold);
+		
+		@media (min-width: @screen-xs) {
+			margin-top: 35px;
+		}  
+    }
+
+    &__application-title {
+        margin: 0;
+        padding: 20px 20px 0px;
+        font-family: 'Play', Arial;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: none;
+        color: #9d1616;
+		
+		@media (min-width: @screen-xs) {
+			padding: 35px 47px 14px 48px;
+		}
+  
+    }
+
+    &__application-list {
+        margin: 20px 20px 30px;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+			display: block;
+			width: auto;
+			margin-bottom: 15px;
+            padding-left: 37px;
+            line-height: 25px;
+            vertical-align: top;
+            background: url(../img/list-marker.svg) left 3px no-repeat;
+
+			@media (min-width: @screen-xs) {
+				display: inline-block;
+				width: 49%;
+			}
+			
+			@media (min-width: @screen-sm) {
+				width: 32%;
+			}
+		}
+		
+		@media (min-width: @screen-xs) {
+			margin: 20px 50px 15px;
+		}
+  
+    }
+
+    &__capability {		
+		padding: 40px 20px 20px; 
+		
+		@media (min-width: @screen-xs) {
+			padding: 40px 50px 20px;
+		}	
+	}
+
+    &__capability-title {
+        margin: 0;
+		padding: 0 0 20px;
+        font-family: 'Play', Arial;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+
+    }
+	
+	&__capability-list{
+		font-size: 14px;
+		
+		@media (min-width: @screen-xs) {font-size: 15px;}
+	}
+	
+}

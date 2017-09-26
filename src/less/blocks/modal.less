@@ -1,0 +1,135 @@
+@font-size--h4: 1.25em;
+@line-height: 1.375em;
+@screen-lg: 992px;
+@opacity: 0.7;
+@transition-time: 0.3s;
+@z-index-modal: 100;
+
+.js-modal-open { overflow: hidden; }
+
+.modal {
+    @block-name: &; // #{$block-name}__element
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @z-index-modal;
+    -webkit-overflow-scrolling: touch;
+
+    .js-modal-open & {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    &__dialog {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: @screen-lg) {
+            width: 830px;
+            height: auto;
+            margin: 30px auto;
+
+            #@{block-name}--open & { animation: modal-content-show @transition-time 1 both; }
+        }
+    }
+
+    &__content {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #fff;
+        outline: 0;
+    }
+
+    &__header {
+        padding: 20px;
+		.clearfix();
+		
+		@media (min-width: @screen-xs) {
+			padding: 50px 50px 20px 50px;
+		}
+  
+    }
+
+    &__closed {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+&__title {
+	display: block;
+	margin: 15px 0;
+	font-family: 'Play', Arial;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 28px;
+	text-align: center;
+	
+	
+	@media (min-width: @screen-xs) {
+		display: block;
+		float: left;
+		width: calc(~'100% - 110px'); 
+		margin: 25px 0 0 25px;
+		text-align: left;
+		.clearfix();
+	}
+}
+
+    &__close {
+        position: absolute !important;
+        top: 5px;
+        right: 5px;
+    }
+
+     &__backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: (@z-index-modal - 1);
+        background-color: rgba(0, 0, 0, @opacity);
+
+        @media (min-width: @screen-lg) { animation: modal-backdrop-show @transition-time 1; }
+    }
+
+    &--open {
+        @media (min-width: @screen-lg) {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@keyframes modal-backdrop-show {
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
+}
+
+@keyframes modal-content-show {
+    0% {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
