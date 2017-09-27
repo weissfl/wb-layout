@@ -4,6 +4,7 @@ build/img
 build/js
 build/*.html
 src/less/bootstrap-3.3.7
+.grunt/
 
 .Saved/
 _arc/
