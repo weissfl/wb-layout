@@ -66,16 +66,6 @@ function alignHeight(selector, cols) {
     }
 }
 
-$(document).ready(function() {
-	alignHeight(".greed__title--robot", 2);
-	alignHeight(".greed__title--more", 2);
-	alignHeight(".greed__cell-inner--2-column", 2);	
-	alignHeight(".greed__cell-inner--3-column", 3);
-	
-
-
-});
-
 /* ========================================================================
  * menu
  * ======================================================================== */
@@ -85,6 +75,18 @@ $('.menu__toggle').bind('click', function () {
     $menu_list.toggleClass('menu__list--visible');
   }
 }());
+
+/* ========================================================================
+ * Красим второе слово
+ * ======================================================================== */
+(function($) {
+  $.fn.paintFirstWord= function(color) {
+    var str = this.text();
+    var splited = str.split(' ');
+    var replaced = str.split(splited[1]).join('<span style = "color:' + color + ';">' + splited[1] + '</span>');
+    this.html(replaced);
+  };
+})(jQuery);
 
 /* ========================================================================
  * Модальное окно. Основано на Bootstrap: modal.js v3.3.7

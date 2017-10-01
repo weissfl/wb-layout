@@ -1,0 +1,44 @@
+.card {
+    background-color: #ffffff;
+
+    &__img {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &__inner {
+        margin: 0 6.5%;
+        padding: 0 0 6px;
+    }
+
+    &__title {
+		margin-bottom: 20px;
+        font-family: 'Play', Arial;
+        font-weight: 700;
+        text-transform: none;
+        font-size: 24px;
+        line-height: 24px;
+		
+		&--size_smaller{
+			font-size: 17px;
+		}
+    }
+
+    &__link {
+        text-decoration: none;
+        color: @color-hot;
+        border-bottom: 1px solid @color-hot;
+
+        &:hover { border-bottom: 1px solid transparent; }
+		
+		&--color_black{
+			color: @color-black;
+            border-bottom: 1px solid @color-black;
+		}
+    }
+
+    &__text p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}

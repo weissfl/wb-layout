@@ -1,26 +1,17 @@
 .phone {
-    padding: 0;
-    font-family: 'Play', Arial;
-    font-size: 24px;
-    font-weight: 700;
-
     &__icon {
         vertical-align: middle;
+        fill: @color-dark-gray;
+        .hidden-sm();
 
-        @media (min-width: @screen-sm) {
-            display: none;
-            text-align: right;
-        }
-
-        @media (min-width: @screen-md) { display: inline; }
-
-        &--color-grey { fill: @color-dark-gray; }
-
-        &--color-blue { fill: @color-cold; }
+        &--color_blue { fill: @color-cold; }
     }
 
     &__text {
         padding-left: 10px;
+        font-family: 'Play', Arial;
+        font-size: 24px;
+        font-weight: 700;
         color: @color-black;
         text-decoration: none;
 
@@ -34,28 +25,6 @@
             font-size: 24px;
         }
 
-        &--color-blue { color: @color-cold; }
-    }
-
-    &--page-header {
-        margin-top: 10px;
-        text-align: center;
-
-        @media (min-width: @screen-sm) {
-            margin-top: 31px;
-            text-align: right;
-        }
-
-        @media (min-width: @screen-md) { text-align: right; }
-
-        .make-xs-column(12);
-        .make-sm-column(3);
-        .make-md-column(5);
-    }
-
-    &--page-footer {
-        margin-bottom: 11px;
-        text-align: center;
-        .make-xs-column(12);
+        &--color_blue { color: @color-cold; }
     }
 }

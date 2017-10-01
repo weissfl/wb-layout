@@ -13,6 +13,17 @@
 
     &:hover {
         color: @color-black;
-        background-color: #ffffff;
+        background-color: #ffffff;		
     }
+	
+	&--color-hot{
+		border: 2px solid lighten(@color-hot, 5%);
+		background-color: lighten(@color-hot, 5%);
+		
+		&:hover{
+			color: #ffffff;
+			border: 2px solid darken(@color-hot, 5%);
+			background-color: darken(@color-hot, 5%);
+		}
+	}
 }

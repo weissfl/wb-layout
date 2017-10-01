@@ -1,6 +1,4 @@
 .section {
-    @media (min-width: @screen-sm) { padding-bottom: 45px; }
-
     &__container {
         max-width: 970px;
         .container();
@@ -14,22 +12,76 @@
     }
 
     &__title {
-        display: block;
-        margin: 70px 0 45px;
+        margin-bottom: 44px;
         text-align: center;
 
         @media (min-width: @screen-sm) { font-size: 44px; }
 
-        &--icon {
-            @media (min-width: @screen-sm) { margin-top: 93px; }
-        }
+        &--color_wheat { color: #ffffff; }
+    }
 
-        &--robot {
-            margin-top: 65px;
-            color: #ffffff;
-        }        
+    &__greed {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        .clearfix ();
+    }
 
-    }	
+    &__greed-wrap-news { margin-bottom: 35px; }
+
+    &__cell-xs-12 { .make-xs-column(12); }
+
+    &__cell-xs-6 { .make-xs-column(6); }
+
+    &__cell-sm-4 { .make-sm-column(4); }
+
+    &__cell-sm-6 { .make-sm-column(6); }
+	
+	&__cell-lg-6 { .make-lg-column(6); }
+	
+    &__inner-sm-4 {
+        margin: 0 auto;
+        max-width: 293px;
+    }
+
+    &__inner-sm-6 {
+        margin: 0 auto;
+        max-width: 455px;
+    }
+
+    &__wrap-icon-card {
+        height: 270px;
+        margin-bottom: 10px;
+
+        @media (min-width: @screen-md) { height: 215px; }
+    }
+
+    &__wrap-icon-item {
+        margin-bottom: 20px;
+
+        @media (min-width: @screen-sm) { margin-bottom: 35px; }
+    }
+
+    &__btn {
+		margin: 35px 0;
+        text-align: center;
+    }
+
+    &__use { margin: 93px 0 53px; }
+
+    &__robots-block { margin: 63px 0 50px; }
+
+    &__add-thing { margin: 96px 0 50px; }
+
+    &__news-block { margin: 63px 0 72px; }
+
+    &__icon-item {
+        margin: 73px 0 0;
+
+        .section__title { margin-bottom: 66px; }
+    }
+
+    &__page-robot { margin-bottom: 46px; }
 
     &__arrow {
         position: absolute;
@@ -40,11 +92,31 @@
         .hidden-xs();
     }
 
-    &--use { background-color: @color-gray; }
-	
-    &--news { 		
-		background-color: @color-cold;
-	}
+    &--color_grey { background-color: @color-gray; }
 
-    &--robors { background: url(../img/catalog-background.jpg) center top repeat; }
+    &--background_mosaic { background: #161616 url(../img/catalog-background.jpg) center top repeat; }
+
+    &--color_cold { background-color: @color-cold; }
+	
+	&--background_polygon {
+        background: @color-cold url(../img/section--see-price_background.jpg) center center no-repeat;
+
+    }
+
+    //legasy
+    &__content {
+        margin-top: 70px;
+        .make-xs-column(12);
+
+        h1 { margin-bottom: 43px; }
+    }
+
+    &__link-wrap {
+        margin: 33px 0 25px;
+        text-align: center;
+
+        &--see-price { margin: 35px 0; }
+    }
+
+ 
 }

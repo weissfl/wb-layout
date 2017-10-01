@@ -1,0 +1,36 @@
+.card-slider {
+    margin: 0 auto;
+    max-width: 450px;
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__list {
+        display: inline-block;
+        width: calc(~'100% - 95px');
+        vertical-align: middle;
+
+        @media (min-width: @screen-sm) { width: auto; }
+
+        .clearfix();
+    }
+
+    &__navigation {
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+
+        &--left {
+            margin-right: 5px;
+
+            svg { transform: rotate(180deg); }
+        }
+
+        @media (min-width: @screen-sm) { display: none; }
+    }
+
+    @media (min-width: @screen-sm) { max-width: 100%; }
+}

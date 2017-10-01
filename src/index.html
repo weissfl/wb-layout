@@ -1,4 +1,6 @@
-@@include('_html_inc/head.html')
+<!doctype html>
+<html lang="ru">
+@@include('_html_inc/head.html', {"title": "Главная"})
 
 <body>
 
@@ -31,124 +33,156 @@
 		</div>
 	</section>
 
-	<section class="section section--use">
+	<section class="section  section--color_grey">
 		<div class="section__container">
 			<div class="section__row">
 				<div class="section__arrow"></div>
-				<h2 class="section__title section__title--icon">Сферы применения</h2>
+				<div class="section__use">
+					<h2 class="section__title">Сферы применения</h2>
 
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-map.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — гид</a>
-					<p class="icon-block__text">Выставки, Аэропорты, Музеи</p>
+					<ul class="section__greed">
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-map.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — гид</a>
+								<p class="icon-card__text">Выставки, Аэропорты, Музеи</p>
+							</div>
+						</li>
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-reg.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — регистратор</a>
+								<p class="icon-card__text">Офисные центры, Стойки регистрации на мероприятиях</p>
+							</div>
+						</li>
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-promo.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — промоутер</a>
+								<p class="icon-card__text">Торговые Центры, Гипермаркеты</p>
+							</div>
+						</li>
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-show.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — шоубот</a>
+								<p class="icon-card__text">Дни рождения, Свадьбы, Корпоративы</p>
+							</div>
+						</li>
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-master.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — соведущий</a>
+								<p class="icon-card__text">Конференции, Презентации</p>
+							</div>
+						</li>
+						<li class="section__cell-xs-6  section__cell-sm-4  section__wrap-icon-card">
+							<div class="icon-card">
+								<div class="icon  icon-card__icon"><img class="icon__img" src="img/wellbot-photo.svg" alt=""></div>
+								<a class="icon-card__link" href="#modal_item" data-toggle="modal" alt="">WellBot — photo</a>
+								<p class="icon-card__text"><b>Мобильная студия.</b> Любые официальные и развлекательные мероприятия</p>
+							</div>
+						</li>
+					</ul>
+					
 				</div>
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-reg.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — регистратор</a>
-					<p class="icon-block__text">Офисные центры, Стойки регистрации на мероприятиях</p>
-				</div>
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-promo.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — промоутер</a>
-					<p class="icon-block__text">Торговые Центры, Гипермаркеты</p>
-				</div>
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-show.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — шоубот</a>
-					<p class="icon-block__text">Дни рождения, Свадьбы, Корпоративы</p>
-				</div>
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-master.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — соведущий</a>
-					<p class="icon-block__text">Конференции, Презентации</p>
-				</div>
-				<div class="icon-block">
-					<div class="icon icon-block__icon"><img class="icon__img" src="img/wellbot-photo.svg" alt=""></div>
-					<a class="icon-block__link" href="#modal_item" data-toggle="modal" alt="">WellBot — photo</a>
-					<p class="icon-block__text"><b>Мобильная студия.</b> Любые официальные и развлекательные мероприятия</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--background_mosaic">
+		<div class="section__container">
+			<div class="section__row">			
+				<div class="section__robots-block">
+					<h2 class="section__title  section__title--color_wheat">Роботы WellBot</h2>
+					<ul class="section__greed">
+						<li class="section__cell-xs-12  section__cell-sm-6">
+							<div class="card  section__inner-sm-6">
+								<img class="card__img" src="img/userfiles/wellbot-promo.jpg" alt="">
+								<div class="card__inner">
+									<h3 class="card__title">
+										<a class="card__link" href="#">WELLBOT — promo</a>
+									</h3>
+									<div class="card__text">
+										<p>Эффективный способ продвижения Вашей компании/продукта. Благодаря интересной и необычной подаче информации, робот расширит существующую целевую аудиторию, привлечет гораздо больше покупателей к организации. </p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="section__cell-xs-12  section__cell-sm-6">
+							<div class="card  section__inner-sm-6">
+								<a href="#"><img  class="card__img" src="img/userfiles/wellbot-photo.jpg" alt=""></a>
+								<div class="card__inner">
+									<h3 class="card__title">
+										<a class="card__link" href="#">WELLBOT — photo</a>
+									</h3>
+									<div class="card__text">
+										<p>Наличие фотокамеры позволяет делать фото- и видеосъемку Вашего мероприятия. Высококачественный принтер в модели WELLBOT-photo напечатает фотографии с индивидуальным оформлением.</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
-	<section class="section section--robors">
+	@@include('_html_inc/add-thing.html')
+
+	<section class="section  section--color_cold">
 		<div class="section__container">
 			<div class="section__row">
-				<h2 class="section__title section__title--robot">Роботы WellBot</h2>
-				<ul class="greed">
-					<li class="greed__cell greed__cell--2-column">
-						<div class="greed__cell-inner greed__cell-inner--2-column">
-							<img class="greed__img" src="img/userfiles/wellbot-promo.jpg" alt="">
-							<h3 class="greed__title greed__title--robot">
-								<a class="greed__link greed__link--robot" href="#">WELLBOT — promo</a>
-							</h3>
-							<div class="greed__text greed__text--robot">
-								<p>Эффективный способ продвижения Вашей компании/продукта. Благодаря интересной и необычной подаче информации, робот расширит существующую целевую аудиторию, привлечет гораздо больше покупателей к организации. </p>
+				<div class="section__news-block">
+					<h2 class="section__title">Новости</h2>
+					<ul class="section__greed  section__greed-wrap-news">
+						<li class="section__cell-xs-12  section__cell-sm-4">
+							<div class="card  section__inner-sm-4">
+								<a href="#"><img class="card__img" src="img/userfiles/new_1.jpg" alt=""></a>
+								<div class="card__inner">
+									<h3 class="card__title  card__title--size_smaller">
+										<a class="card__link  card__link--color_black" href="#">ТУИТ и вуз Японии разработают совместные программы</a>
+									</h3>
+									<div class="card__text">
+										<p>Мебели Steelcase освоили печать крупных структур из эластичных без дополнительных подпорок.</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="greed__cell greed__cell--2-column">
-						<div class="greed__cell-inner greed__cell-inner--2-column">
-							<a href="#"><img  class="greed__img" src="img/userfiles/wellbot-photo.jpg" alt=""></a>
-							<h3 class="greed__title greed__title--robot">
-								<a class="greed__link  greed__link--robot" href="#">WELLBOT — photo</a>
-							</h3>
-							<div class="greed__text greed__text--robot">
-								<p>Наличие фотокамеры позволяет делать фото- и видеосъемку Вашего мероприятия. Высококачественный принтер в модели WELLBOT-photo напечатает фотографии с индивидуальным оформлением.</p>
+						</li>
+						<li class="section__cell-xs-12  section__cell-sm-4">
+							<div class="card  section__inner-sm-4">
+								<a href="#"><img class="card__img" src="img/userfiles/new_2.jpg" alt=""></a>
+								<div class="card__inner">
+									<h3 class="card__title  card__title--size_smaller">
+										<a class="card__link  card__link--color_black" href="#">Эксперт назвал главные аспекты регулирования ИИ</a>
+									</h3>
+									<div class="card__text">
+										<p>Мебели Steelcase освоили печать крупных структур из эластичных материалов без дополнительных подпорок.</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-
-			</div>
-		</div>
-	</section>
-
-	@@include('_html_inc/block-more.html')
-
-	<section class="section section--news">
-		<div class="section__container">
-			<div class="section__row">
-				<h2 class="section__title">Новости</h2>
-				<ul class="greed">
-					<li class="greed_cell greed__cell--3-column">
-						<div class="greed__cell-inner greed__cell-inner--3-column">
-							<a href="#"><img class="greed__img" src="img/userfiles/new_1.jpg" alt=""></a>
-							<h3 class="greed__title greed__title--news">
-								<a class="greed__link greed__link--news" href="#">ТУИТ и вуз Японии разработают совместные программы</a>
-							</h3>
-							<div class="greed__text greed__text--news">
-								<p>Мебели Steelcase освоили печать крупных структур из эластичных материалов без дополнительных подпорок.</p>
+						</li>
+						<li class="section__cell-xs-12  section__cell-sm-4">
+							<div class="card  section__inner-sm-4">
+								<a href="#"><img class="card__img" src="img/userfiles/new_3.jpg" alt=""></a>
+								<div class="card__inner">
+									<h3 class="card__title  card__title--size_smaller">
+										<a class="card__link  card__link--color_black" href="#">В MIT освоили печать геле</a>
+									</h3>
+									<div class="card__text">
+										<p>Мебели Steelcase освоили печать крупных структур из эластичных материалов без дополнительных подпорок.</p>
+									</div>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="greed_cell greed__cell--3-column">
-						<div class="greed__cell-inner greed__cell-inner--3-column">
-							<a href="#"><img class="greed__img" src="img/userfiles/new_2.jpg" alt=""></a>
-							<h3 class="greed__title greed__title--news">
-								<a class="greed__link greed__link--news" href="#">Эксперт назвал главные аспекты регулирования ИИ</a>
-							</h3>
-							<div class="greed__text greed__text--news">
-								<p>Мебели Steelcase освоили печать крупных структур из эластичных материалов без дополнительных подпорок.</p>
-							</div>
-						</div>
-					</li>
-					<li class="greed_cell greed__cell--3-column">
-						<div class="greed__cell-inner greed__cell-inner--3-column">
-							<a href="#"><img class="greed__img" src="img/userfiles/new_3.jpg" alt=""></a>
-							<h3 class="greed__title greed__title--news">
-								<a class="greed__link greed__link--news" href="#">В MIT освоили печать геле</a>
-							</h3>
-							<div class="greed__text greed__text--news">
-								<p>Мебели Steelcase освоили печать крупных структур из эластичных материалов без дополнительных подпорок.</p>
-							</div>
-						</div>
-					</li>
-
-				</ul>
-				<div class="greed__link-wrap">
-					<a class="btn" href="#">Читать все новоcти</a>
+						</li>
+					
+					</ul>
+					
+					<div class="section__btn">
+						<a class="btn" href="#">Читать все новоcти</a>
+					</div>					
+					
 				</div>
 
 			</div>
@@ -165,7 +199,7 @@
 				<button type="button" class="modal__closed" data-dismiss="modal" aria-label="Закрыть">
 				<svg width="36" height="36"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use></svg>
 			</button>
-				<div class="icon icon--for-modal" class="icon-block__image"><img class="icon__img" src="img/wellbot-map.svg" alt=""></div>
+				<div class="icon modal__icon" class="icon-block__image"><img class="icon__img" src="img/wellbot-map.svg" alt=""></div>
 				<h4 class="modal__title">WellBot — гид</h4>
 			</div>
 			<div class="modal__body">
