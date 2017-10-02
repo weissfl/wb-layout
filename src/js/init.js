@@ -2,10 +2,10 @@
  * Выравнивание блоков по высоте
  * ======================================================================== */
 $(window).on("load", function() {
-	alignHeight(".section__inner-sm-6 .card__title", 2);
-	alignHeight(".section__inner-sm-6", 2);
-	alignHeight(".section__inner-sm-4", 3);
+	alignHeight(".section__robots-block .card__title", 2);
+	alignHeight(".section__robots-block .section__card", 2);
 	alignHeight(".add-thing__title", 2);
+	alignHeight(".section__news-block .section__card", 3);
 });
 
 /* ========================================================================
