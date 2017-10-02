@@ -102,6 +102,28 @@
 
     &__page-robot { margin-bottom: 46px; }
 
+    &__content {
+        margin: 60px 0 163px;
+        .make-xs-column(12);
+
+        h1 { margin-bottom: 33px; }
+    }
+	
+	&__list {
+		margin: 60px 0 163px;
+		
+		li {
+			.make-xs-column(12);
+			.make-sm-column(4);
+		}
+		
+		h1 { margin: 0 0 33px 15px; }
+		
+		.section__card {			
+			max-width: 293px;
+		}		
+	}
+	
     &__arrow {
         position: absolute;
         top: 0px;
@@ -119,23 +141,5 @@
 	
 	&--background_polygon {
         background: @color-cold url(../img/section--see-price_background.jpg) center center no-repeat;
-
-    }
-
-    //legasy
-    &__content {
-        margin-top: 70px;
-        .make-xs-column(12);
-
-        h1 { margin-bottom: 43px; }
-    }
-
-    &__link-wrap {
-        margin: 33px 0 25px;
-        text-align: center;
-
-        &--see-price { margin: 35px 0; }
-    }
-
- 
+    } 
 }
