@@ -58,7 +58,7 @@
 
             &:hover {
                 background-color: @color-cold;
-                transition: all .2s ease;
+                transition: all .1s ease;
             }
         }
 
@@ -80,14 +80,16 @@
     &__toggle {
         background-color: @color-black;
         border: 1px solid transparent;
+		cursor: pointer;
 
-        & div {
+        span {
+			display: block;
             background-color: #ffffff;
             width: 24px;
             height: 3px;
         }
 
-        & div+div { margin-top: 5px; }
+        & span+span { margin-top: 5px; }
     }
 
     @media (min-width: @screen-md) { margin-top: 0; }

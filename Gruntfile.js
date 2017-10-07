@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       options: {
         processors: [
           // автопрефиксер и его настройки
-          require("autoprefixer")({browsers: "last 2 versions"})
+          require("autoprefixer")({browsers: ['last 2 versions', 'ie 11', 'Android >= 4.1', 'Safari >= 8', 'iOS >= 8']})
         ]
       },
       style: {
@@ -46,24 +46,24 @@ module.exports = function(grunt) {
     },
 
     // минимизируем стилевые файлы
-//    cssmin: {
-//      style: {
-//        options: {
-//          keepSpecialComments: 0
-//        },
-//        files: [{
-//          expand: true,
-//          // в какой папке брать исходники
-//          cwd: 'build/css',
-//          // какие файлы (ЛЮБОЕ_ИМЯ.css, но не ЛЮБОЕ_ИМЯ.min.css)
-//          src: ['*.css', '!*.min.css'],
-//          // в какую папку писать результат
-//          dest: 'build/css',
-//          // какое расширение дать результатам обработки
-//          ext: '.min.css'
-//        }]
-//      }
-//    },
+    cssmin: {
+      style: {
+        options: {
+          keepSpecialComments: 0
+        },
+        files: [{
+          expand: true,
+          // в какой папке брать исходники
+          cwd: 'build/css',
+          // какие файлы (ЛЮБОЕ_ИМЯ.css, но не ЛЮБОЕ_ИМЯ.min.css)
+          src: ['*.css', '!*.min.css'],
+          // в какую папку писать результат
+          dest: 'build/css',
+          // какое расширение дать результатам обработки
+          ext: '.min.css'
+        }]
+      }
+    },
 
     // процесс копирования
     copy: {
@@ -209,7 +209,7 @@ module.exports = function(grunt) {
     'less',
     'postcss',
     'cmq',
-    // 'cssmin',
+    'cssmin',
   ]);
 	
  // только js

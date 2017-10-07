@@ -1,0 +1,55 @@
+.paginator {
+    position: relative;
+    text-align: center;
+
+    &__link {
+        display: inline-block;
+        margin: 0 13px;
+        font-family: 'Play', Arial;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        text-decoration: none;
+        color: @color-black;
+
+        &--active {
+            margin: 0px;
+            width: 32px;
+            height: 32px;
+            font-weight: 700;
+            background-color: @color-cold;
+            border-radius: 50%;
+        }
+    }
+
+    &__svg {
+        vertical-align: middle;
+        fill: @color-dark-gray;
+    }
+
+    &__start, &__end {
+        font-size: 14px;
+        line-height: 13px;
+        border-bottom: 1px solid @color-black;
+
+        &:hover { border-bottom: 1px solid transparent; }
+    }
+
+    &__start-wrap {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        margin-left: 14px;
+
+        .paginator__svg { transform: rotate(180deg); }
+    }
+
+    &__end-wrap {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        margin-right: 14px;
+    }
+
+    &__start-wrap, &__end-wrap { .hidden-xs(); }
+}

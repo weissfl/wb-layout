@@ -52,10 +52,21 @@
  * Выравнивание блоков по высоте
  * ======================================================================== */
 function alignHeight(selector, cols) {
-    var $blocks = $(selector);
+    var $blocks = $(selector),
+	width = $(document).width();
+	if (cols instanceof Array) {
+		var current_cols = cols[0][1];
+		for (var i=cols.length-1; i>0; i--) {
+			if (cols[i][0]<=width) {
+				current_cols = cols[i][1];
+				break;
+			}
+		}
+		cols = current_cols;
+	}
     var rows = Math.ceil($blocks.length/cols);
     for(var i=0;i<rows;i++) {
-		var maxHeight = 0;
+    	var maxHeight = 0;
         var $row = $blocks.slice(i*cols,i*cols+cols);
         $row.each(function() {
             if ($(this).height() > maxHeight) {

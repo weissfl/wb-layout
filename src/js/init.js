@@ -2,12 +2,11 @@
  * Выравнивание блоков по высоте
  * ======================================================================== */
 $(window).on("load", function() {
-	alignHeight(".section__robots-block .card__title", 2);
-	alignHeight(".section__robots-block .section__card", 2);
-	alignHeight(".add-thing__title", 2);
-	alignHeight(".section__news-block .section__card", 3);
-	alignHeight(".section__list .section__card", 3);
-	
+	alignHeight(".section__robots-block .card__title", [[0, 1], [750, 2]]);
+	alignHeight(".section__robots-block .section__card", [[0, 1], [750, 2]]);
+	alignHeight(".section__robots-block .section__card", [[0, 1], [750, 2]]);
+	alignHeight(".add-thing__title", [[0, 1], [750, 2]]);
+	alignHeight(".section__news-block .section__card, .section__list .section__card", [[0, 1], [750, 3]]);
 });
 
 /* ========================================================================

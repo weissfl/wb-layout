@@ -1,0 +1,50 @@
+div:before,
+section:before,
+ul:before,
+li:before,
+span:before{
+	position: absolute;
+	display: block;
+	padding: 0 4px;
+	font-size: 12px;
+	line-height: 18px;
+	content: attr(class);
+	background-color: #FF00AE;
+	color: black;
+}
+
+div {
+	outline: 1px solid #FF00AE;
+}
+
+section:before {
+	background-color: #D0FF00;
+}
+
+ul {
+	outline: 1px solid #D0FF00;
+}
+
+ul:before {
+	background-color: #3AE2CE;
+}
+
+ul {
+	outline: 1px solid #3AE2CE;
+}
+
+li:before {
+	background-color: #FFDD00;
+}
+
+li {
+	outline: 1px solid #FFDD00;
+}
+
+span:before {
+	background-color: #00FFA9;
+}
+
+span {
+	outline: 1px solid #00FFA9;
+}

@@ -6,6 +6,9 @@
     &__title { margin-bottom: 32px; }
 
     &__field-text {
+		display: inline;
+		margin: 0;
+		
         input[type="text"], textarea {
             font-size: 14px;
             padding: 8px 15px;
@@ -29,6 +32,12 @@
             height: 136px;
             margin-bottom: 15px;
         }
+		
+		.error_input {
+			border: 1px solid lighten(@color-hot, 40%) !important;
+			background-color: lighten(@color-hot, 60%);
+		}
+		
     }
 
     &__fields .form__field-text:nth-child(even) input[type="text"] { margin-right: 0; }
@@ -41,4 +50,5 @@
         font-size: 13px;
         background-color: @color-gray;
     }
+	
 }
