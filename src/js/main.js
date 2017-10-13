@@ -469,3 +469,7 @@ $('.menu__toggle').bind('click', function () {
   })
 
 }(jQuery);
+
+$(window).on("load", function() {
+	$(".page-footer").after($(".modal"));
+});
