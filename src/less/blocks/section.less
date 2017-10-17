@@ -131,10 +131,24 @@
     &__arrow {
         position: absolute;
         top: 0px;
-        width: 100%;
-        height: 29px;
+		left: 0;
+		right: 0;
+		margin: auto;
+        width: 127px;
+        height: 41px;
         background: url(../img/slider-arrow.jpg) center top no-repeat;
+		
         .hidden-xs();
+		
+		@media (min-resolution: 2dppx) {
+			background: url(../img/slider-arrow_2x.jpg) center top no-repeat;
+			background-size: contain;
+		}
+		
+		@media (min-resolution: 3dppx) {
+			background: url(../img/slider-arrow_3x.jpg) center top no-repeat;
+			background-size: contain;
+		}
     }
 	
 	&__img-main {

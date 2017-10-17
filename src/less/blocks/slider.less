@@ -3,7 +3,20 @@
     background-color: @color-cold;
     background: radial-gradient(at center 75%, lighten(@color-cold, 60%), @color-cold);
 
-    @media (min-width: @screen-sm) { height: 660px; background: url(../img/slider-background.jpg) center bottom no-repeat; }
+    @media (min-width: @screen-sm) {
+		height: 660px;
+		background: url(../img/slider-background.jpg) center bottom no-repeat;
+		
+		@media (min-resolution: 2dppx) {
+			background: url(../img/slider-background_2x.jpg) center top no-repeat;
+			background-size: cover;
+		}
+		
+		@media (min-resolution: 3dppx) {
+			background: url(../img/slider-background_3x.jpg) center top no-repeat;
+			background-size: cover;
+		}
+	}
 
     @media (min-width: @screen-md) { height: 767px; }
 
